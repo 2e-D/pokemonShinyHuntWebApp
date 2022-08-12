@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="preloader"></div>
     <div class=navbar>
         <div class=leftside>
             <h1>Shiny Hunter</h1>
@@ -16,22 +17,34 @@
             <ul>
                 <a href="">Collection</a>
                 <a href="">Home</a>
-                <a href="">About</a>
+                <a href="about.html">About</a>
             </ul>
         </div>
     
     </div>
-
+<!-- SEARCHBOX-->
     <div class="searchbox">
         <input id="pokemonName" type="text" placeholder="Choose your Pokemon">
     </div>
+    <!--SEARCHBOX END-->
 
     <div class="main">
        
-                
-<h1>Pokemon Encountered</h1>
-<h2 id="counter">0</h2>
+       <div class="encounter-text">       
+<h1>Number of Encounters</h1>
 
+
+<!-- Displaying the pokemon being hunted-->
+<div class="pokemon-img">
+    <p>here will be image</p>
+    <img class = "poke-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png" alt="">
+</div>
+<div class="pokemon-name">
+    <h3>Ditto</h3>
+</div>
+<h2 id="counter">0</h2>
+</div>
+<!-- Display Ending-->
 
 
 
@@ -46,6 +59,6 @@
 <script src="app.js"></script>
 
 
-   
+
 </body>
 </html>
