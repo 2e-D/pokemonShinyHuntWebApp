@@ -51,9 +51,16 @@ a:hover {
 }
 
 
-.shinyInfo {
-    background-image: url(/pokeballForAboutPage.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
+.pokeImages {
+    display: flex;
+}
+
+
+.redGyarados {
+    display: flex;
+    justify-content: center;
+}
+
+.redG {
+    border-radius: 10px;
 }
