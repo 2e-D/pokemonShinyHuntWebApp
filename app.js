@@ -1,9 +1,38 @@
-function getPokemon() {
-fetch('https://pokeapi.co/api/v2/pokemon/ditto')
-    .then((response) => response.json())
-    .then((data) => console.log(data));
+// document.querySelector('#search').addEventListener('click', getPokemon) // adds a listener so when you click search it will call getPokemon()
+
+const apiData = {
+    url: 'https://pokeapi.co/api/v2/',
+    type: 'pokemon',
+    id: '6',
+}  // Creates the object of data to pull from the API
+
+const {url,type,id} = apiData
+ const apiUrl = `${url}${type}/${id}`
+
+
+ fetch(apiUrl)
+ .then( (data ) => data.json() ) // converts the data pulled into a json
+ .then( (pokemon ) => generateHtml(pokemon) )  // generates HTML in the <pokemon> DIV
+
+
+// Generates the HTML
+const generateHtml = (data) => {
+    console.log (data)
+
+    const html = `
+    <div class = "name"> ${data.name.charAt(0).toUpperCase()+ data.name.slice(1)}</div> 
     
-}
+     <div class = "sprites">
+      <img src = ${data.sprites.front_shiny}> 
+      <img src = ${data.sprites.back_shiny}>
+      </div> 
+      `// this div renders in the name and shiny sprites
+
+    const pokemonDiv = document.querySelector('.pokemon')
+    pokemonDiv.innerHTML = html
+} 
+
+
 
  /* COUNTER */
 let countUp = document.getElementById("counter") // Assigns counter in HTML to a variable and grabs it
