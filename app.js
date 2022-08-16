@@ -1,11 +1,9 @@
-// document.querySelector('#search').addEventListener('click', getPokemon) // adds a listener so when you click search it will call getPokemon()
-
 const apiData = {
     url: 'https://pokeapi.co/api/v2/',
     type: 'pokemon',
     id: '6',
 }  // Creates the object of data to pull from the API
-
+console.log (apiData)
 const {url,type,id} = apiData
  const apiUrl = `${url}${type}/${id}`
 
