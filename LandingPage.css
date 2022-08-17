@@ -1,0 +1,30 @@
+* {
+    margin: auto;
+}
+
+body,html {
+    height: 100%
+}
+
+.landingImage {
+   background-image: url(/CelebiShrine.png);
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+}
+
+
+.Enter {
+    text-decoration: none;
+    font-size: 55px;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: yellow;
+    
+}
+
+.Enter:hover {
+    font-size: 65px;
+}
