@@ -6,8 +6,18 @@ body,html {
     height: 100%
 }
 
-.landingImage {
+.landingImageDay {
    background-image: url(/CelebiShrine.png);
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+}
+
+.landingImageNight {
+    background-image: url(/celebishrineNight.png);
    height: 100%;
    background-position: center;
    background-repeat: no-repeat;
