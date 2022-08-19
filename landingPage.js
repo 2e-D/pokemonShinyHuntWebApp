@@ -1,9 +1,11 @@
+
+
+
 let currentTime = new Date().getHours();
-if (document.body) {
-    if (currentTime >= 6 && currentTime < 18) {
-        document.body.className = "landingImageNight"
-    }
-    else if (currentTime >= 7 && currentTime < 20) {
+if (7 <= currentTime && currentTime < 18) {
+    if (document.body) {
         document.body.className = "landingImageDay"
     }
-}
+} else {if (document.body) {
+    document.body.className = "landingImageNight"
+}}
