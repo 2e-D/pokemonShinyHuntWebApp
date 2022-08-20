@@ -1,3 +1,6 @@
+
+
+
 const apiData = {
     url: 'https://pokeapi.co/api/v2/',
     type: 'pokemon',
@@ -21,8 +24,8 @@ const generateHtml = (data) => {
     <div class = "name"> ${data.name.charAt(0).toUpperCase()+ data.name.slice(1)}</div> 
     
      <div class = "sprites">
-      <img src = ${data.sprites.front_shiny}> 
-      <img src = ${data.sprites.back_shiny}>
+      <img  class = "pokeSprite" src = ${data.sprites.front_shiny}> 
+      <img class = "pokeSprite" src = ${data.sprites.back_shiny}>
       </div> 
       `// this div renders in the name and shiny sprites
 
@@ -58,3 +61,17 @@ let loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
     loader.style.display = "none";
 })
+
+
+// Day and night backgrounds
+
+let currentTime = new Date().getHours();
+if (7 <= currentTime && currentTime < 18) {
+    if (document.body) {
+        document.body.className = "MainImageDay"
+    }
+} else {
+    if (document.body) {
+        document.body.className = "MainImageNight"
+    }
+}
