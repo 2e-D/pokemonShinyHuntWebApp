@@ -17,4 +17,4 @@ if ( 4 <= currentTime2 && currentTime2 < 12){
     document.getElementById('Greeting').innerHTML = 'Good Morning'
 } else if (12 <= currentTime2 && currentTime2 < 17){
     document.getElementById('Greeting').innerHTML = 'Good Afternoon'
-} else if (17 <= currentTime2 && currentTime2 < 4){ document.getElementById('Greeting').innerHTML = 'Good Evening'}
+} else { document.getElementById('Greeting').innerHTML = 'Good Evening'}

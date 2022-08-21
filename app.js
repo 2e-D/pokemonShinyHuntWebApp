@@ -4,11 +4,11 @@
 const apiData = {
     url: 'https://pokeapi.co/api/v2/',
     type: 'pokemon',
-    id: '6',
+    name: 'charizard',
 }  // Creates the object of data to pull from the API
 console.log (apiData)
-const {url,type,id} = apiData
- const apiUrl = `${url}${type}/${id}`
+const {url,type,name} = apiData
+ const apiUrl = `${url}${type}/${name}`
 
 
  fetch(apiUrl)
