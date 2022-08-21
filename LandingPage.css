@@ -17,7 +17,7 @@ body,html {
 }
 
 .landingImageNight {
-    background-image: url(/celebishrineNight.png);
+   background-image: url(/celebishrineNight.png);
    height: 100%;
    background-position: center;
    background-repeat: no-repeat;
@@ -37,4 +37,17 @@ body,html {
 
 .Enter:hover {
     font-size: 65px;
+}
+
+
+#Greeting {
+    font-family: 'Pokemon Solid', sans serif;
+
+}
+
+.landingText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
