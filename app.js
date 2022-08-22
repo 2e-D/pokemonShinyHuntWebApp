@@ -1,33 +1,30 @@
-
-
-
 const apiData = {
     url: 'https://pokeapi.co/api/v2/',
     type: 'pokemon',
-    name: 'charizard',
-}  // Creates the object of data to pull from the API
+    name: 'groudon',
+} 
 console.log (apiData)
 const {url,type,name} = apiData
  const apiUrl = `${url}${type}/${name}`
 
 
  fetch(apiUrl)
- .then( (data ) => data.json() ) // converts the data pulled into a json
- .then( (pokemon ) => generateHtml(pokemon) )  // generates HTML in the <pokemon> DIV
+ .then( (data ) => data.json() )
+ .then( (pokemon ) => generateHtml(pokemon) )  
 
 
-// Generates the HTML
+
 const generateHtml = (data) => {
     console.log (data)
 
     const html = `
     <div class = "name"> ${data.name.charAt(0).toUpperCase()+ data.name.slice(1)}</div> 
     
-     <div class = "sprites">
+        <div class = "sprites">
       <img  class = "pokeSprite" src = ${data.sprites.front_shiny}> 
       <img class = "pokeSprite" src = ${data.sprites.back_shiny}>
-      </div> 
-      `// this div renders in the name and shiny sprites
+        </div> 
+      `
 
     const pokemonDiv = document.querySelector('.pokemon')
     pokemonDiv.innerHTML = html
@@ -36,15 +33,15 @@ const generateHtml = (data) => {
 
 
  /* COUNTER */
-let countUp = document.getElementById("counter") // Assigns counter in HTML to a variable and grabs it
+let countUp = document.getElementById("counter")
 
 console.log(countUp)
-let count = 0        // sets a count variable
+let count = 0       
 
 
-function increment() { // links to the increment function i set in HTML and calls it everytime the button is clicked
+function increment() { 
     count = count + 1
-    countUp.innerText = count // Changes the Text from '0' to the count variable
+    countUp.innerText = count 
 }
 
 // Unsure wether to add decrement button

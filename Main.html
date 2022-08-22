@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiny Hunter</title>
     <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+
    
 </head>
 <body>
     <div id="preloader"></div>
     <div class=navbar>
         <div class=leftside>
-            <h1>Shiny Hunter</h1>
+            <h1>PokeFinder</h1>
         </div>
         <div class=rightside>
             <ul>
@@ -25,6 +27,7 @@
     
     </div>
 
+<div class="MainBackground">
 
     <div class="searchbox">
         <input id="pokemonName" type="text" placeholder="Choose your Pokemon">
@@ -39,7 +42,7 @@
 <h1>Number of Encounters</h1>
 
 <div class="pokemon"></div>
-<!-- Displaying the pokemon being hunted-->
+
 
 <h2 id="counter">0</h2>
 </div>
@@ -49,12 +52,22 @@
 
             <!-- COUNTER-->
 <div class="btn-container">
-    <button id="increment-btn" onclick="increment()">  +1 Encounter</button>
+    <button class ="btn1" id="increment-btn" onclick="increment()">  +1 Encounter</button>
 </div>
 
+
           <!--COUNTER END-->
+
      
               </div>
+
+</div>     
+
+<!-- FOOTER-->
+
+<div class="footer">
+    <h3>Powered by <span class="pokeapitext">PokeAPI</span></h3>
+</div>
 <script src="app.js"></script>
 
 
