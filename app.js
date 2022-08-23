@@ -72,3 +72,11 @@ if (7 <= currentTime && currentTime < 18) {
         document.body.className = "MainImageNight"
     }
 }
+
+// HOVER MENU 
+
+document.getElementsByClassName('dropdown-content').addEventListener("click", shinyOdds() )
+
+function shinyOdds() {
+    
+}
