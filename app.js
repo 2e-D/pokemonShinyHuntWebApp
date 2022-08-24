@@ -75,8 +75,5 @@ if (7 <= currentTime && currentTime < 18) {
 
 // HOVER MENU 
 
-document.getElementsByClassName('dropdown-content').addEventListener("click", shinyOdds() )
 
-function shinyOdds() {
-    
-}
+
