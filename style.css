@@ -156,7 +156,7 @@ border-radius : 10px;
 }
 
 .MainImageNight {
-   background-image: url(./MainBackgroundNight.png);
+   background-image: url(MainBackgroundNight.png);
    height: 100%;
    background-position: center;
    background-repeat: no-repeat;
@@ -165,7 +165,7 @@ border-radius : 10px;
 }
 
 .MainImageDay {
-   background-image: url(./MainDayBackground.png);
+   background-image: url(MainDayBackground.png);
    height: 100%;
    background-position: center;
    background-repeat: no-repeat;
