@@ -7,7 +7,7 @@ body,html {
 }
 
 .landingImageDay {
-   background-image: url(/CelebiShrine.png);
+   background-image: url(CelebiShrine.png);
    height: 100%;
    background-position: center;
    background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body,html {
 }
 
 .landingImageNight {
-   background-image: url(/celebishrineNight.png);
+   background-image: url(celebishrineNight.png);
    height: 100%;
    background-position: center;
    background-repeat: no-repeat;
